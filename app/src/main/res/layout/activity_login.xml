@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context="com.example.LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spendwise"
+                android:text="Spendwise"
+                android:fontFamily="@font/leddotmatrixregular"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginRight="50dp"
+                android:textSize="50dp"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/motto"
+                android:text="Login to Supercharge your finance"
+                android:fontFamily="@font/jetbrains_mono"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                android:padding="20dp">
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/login_email"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/lavender_border"
+                    android:padding="8dp"
+                    android:hint="Email"
+                    android:textColorHint="@color/grey"
+                    android:drawableLeft="@drawable/baseline_mail_lock_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/grey"/>
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/login_password"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:padding="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/grey"
+                    android:drawableLeft="@drawable/baseline_lock_open_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/grey"/>
+                <Button
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Login"
+                    android:textColor="@color/darkGreen"
+                    android:backgroundTint="@color/lightGreen"
+                    android:id="@+id/login_button"
+                    android:textSize="18sp"
+                    app:cornerRadius = "30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forgot_password"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:padding="8dp"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/darkGreen"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signupRedirectText"
+                    android:text="Not yet registered? Signup"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginTop="0dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/darkGreen"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
